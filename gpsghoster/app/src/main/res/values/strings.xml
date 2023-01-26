@@ -1,0 +1,223 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<resources>
+    <string name="app_name">GPSGhoster</string>
+
+
+    <string name="title_activity_login">GPSGhoster</string> <!-- <string name="title_activity_login">LoginActivity</string> -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_open_street_map">OpenStreetMapActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Parse -->
+    <string name="parse_app_id">web-app-docker</string>
+    <string name="parse_client_key">master</string>
+    <string name="parse_server">http://172.30.0.5:1337/parse/</string>
+    <string name="parse_server_hostname">api.gpsghoster.votre_domaine.com</string>
+
+    <string name="profile_logo_content_description">Logo</string>
+    <string name="profile_title_logged_in">Your are logged in as</string>
+    <string name="profile_logout_button_label">Log out</string>
+    <string name="profile_title_logged_out">You must be logged in to view your profile</string>
+    <string name="profile_login_button_label">Log in</string>
+
+    <!-- authentification -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must have \n at least 8 characters\n
+at least 1 digit \n
+at least 1 lower case letter \n
+at least 1 upper case letter \n
+at least 1 special character @#$%&amp;+= \n
+no white spaces.</string>
+    <string name="login_failed">"Login failed"</string>
+
+<!--    &lt;!&ndash;  Permission  &ndash;&gt;-->
+<!--    <string name="permission_alertDialog_message">This application need all the required permission to run. Do you want to allow it now ?</string>-->
+
+    <!--  Biometric  -->
+    <string name="button_biometrics_signin">Use Biometrics to sign in</string>
+    <string name="message_no_biometric">Biomteric signature not found! Setup your Biomterics first from the device settings.</string>
+    <string name="message_encryption_failed">Encryption Failed</string>
+
+    <!-- navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_osm">OpenStreetMap</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- Preference Titles -->
+    <string name="isSignedUp_key">gpsghoster.isSignedUp</string>
+<!--    <string name="credential_key">gpsghoster.credential</string>-->
+    <string name="title_key">gpsghoster.title</string>
+    <string name="subtitle_key">gpsghoster.subtitle</string>
+
+    <!-- Database Preferences -->
+    <string name="database_header_key">database_key</string>
+    <string name="database_header_title">Database</string>
+
+<!--    <string name="database_password_key">gpsghoster.password</string>-->
+    <string name="database_password_title">Password</string>
+
+    <!--Open Street Map Preferences -->
+    <string name="osm_header_key">osm_header</string>
+    <string name="osm_header_title">Open Street Map</string>
+
+    <string name="osm_endpoint_key">gpsghoster.osm_endpoint</string>
+    <string name="osm_endpoint_title">Overpass API endpoint</string>
+    <string name="osm_endpoint_default_value">https://overpass-api.de/api/interpreter</string>
+
+    <string name="osm_building_filter_key">gpsghoster.osm_building_filter</string>
+    <string name="osm_building_filter_title">Building filter</string>
+    <string name="osm_building_filter_default_value">yes|house|residential|apartments|detached</string>
+
+    <string name="osm_building_threshold_key">gpsghoster.osm_building_threshold</string>
+    <string name="osm_building_threshold_title">Building threshold</string>
+    <string name="osm_building_threshold_default_value">10</string>
+
+    <!-- Location Service Preferences -->
+    <string name="location_service_header_key">location_service_header</string>
+    <string name="location_service_header_title">Location service</string>
+
+    <string name="channel_id">GPSGhoster</string>
+    <string name="channel_name">Location service</string>
+    <string name="channel_description">channel description</string>
+
+    <string name="notification_title">Location service</string>
+    <string name="notification_message">notification message</string>
+    <string name="notification_ticker">notification ticker</string>
+
+    <string name="location_service_key">gpsghoster.location_service</string>
+    <string name="location_service_title">Location service</string>
+    <string name="location_service_summary_on">is running</string>
+    <string name="location_service_summary_off">is stopping</string>
+    <string name="location_service_default_value">false</string>
+
+    <!-- Android location -->
+    <string name="android_location_header_title">Android location</string>
+
+    <string name="android_location_key">gpsghoster.android_location_key</string>
+    <string name="android_location_title">Android location</string>
+    <string name="android_location_summary_on">is enabled</string>
+    <string name="android_location_summary_off">is disabled</string>
+    <string name="android_location_default_value">true</string>
+
+    <string name="android_location_min_time_ms_key">gpsghoster.android_location_min_time_ms_key</string>
+    <string name="android_location_min_time_ms_title">minTime (ms)</string>
+    <string name="android_location_min_time_ms_default_value">1000</string>
+
+    <string name="android_location_min_distance_m_key">gpsghoster.min_distance_m</string>
+    <string name="android_location_min_distance_m_title">minDistance (m)</string>
+    <string name="android_location_min_distance_m_default_value">0</string>
+
+    <string name="criteria_key">gpsghoster.criteria_key</string>
+    <string name="criteria_title">Criteria</string>
+    <string name="criteria_summary_on">is enabled</string>
+    <string name="criteria_summary_off">is disabled</string>
+    <string name="criteria_default_value">false</string>
+
+    <string name="android_location_accuracy_key">gpsghoster.android_location_accuracy</string>
+    <string name="android_location_accuracy_title">Accuracy</string>
+    <string name="android_location_accuracy_default_value">ACCURACY_FINE</string>
+
+    <string name="android_location_horizontal_accuracy_key">gpsghoster.android_location_horizontal_accuracy</string>
+    <string name="android_location_horizontal_accuracy_title">Horizontal accuracy</string>
+    <string name="android_location_horizontal_accuracy_default_value">ACCURACY_HIGH</string>
+
+    <string name="android_location_is_altitude_required_key">gpsghoster.android_location_is_altitude_required</string>
+    <string name="android_location_is_altitude_required_title">Is altitude required</string>
+    <string name="android_location_is_altitude_required_default_value">true</string>
+
+    <string name="android_location_vertical_accuracy_key">gpsghoster.android_location_vertical_accuracy</string>
+    <string name="android_location_vertical_accuracy_title">Vertical accuracy</string>
+    <string name="android_location_vertical_accuracy_default_value">ACCURACY_HIGH</string>
+
+    <string name="android_location_is_bearing_required_key">gpsghoster.android_location_is_bearing_required</string>
+    <string name="android_location_is_bearing_required_title">Is bearing required</string>
+    <string name="android_location_is_bearing_required_default_value">true</string>
+
+    <string name="android_location_bearing_accuracy_key">android_location_bearing_accuracy</string>
+    <string name="android_location_bearing_accuracy_title">Bearing accuracy</string>
+    <string name="android_location_bearing_accuracy_default_value">ACCURACY_HIGH</string>
+
+    <string name="android_location_is_cost_allowed_key">gpsghoster.android_location_is_cost_allowed</string>
+    <string name="android_location_is_cost_allowed_title">Is cost allowed</string>
+    <string name="android_location_is_cost_allowed_default_value">true</string>
+
+    <string name="android_location_power_requirement_key">gpsghoster.android_location_power_requirement</string>
+    <string name="android_location_power_requirement_title">Power Requirement</string>
+    <string name="android_location_power_requirement_default_value">POWER_HIGH</string>
+
+    <string name="android_location_is_speed_required_key">gpsghoster.android_location_is_speed_required</string>
+    <string name="android_location_is_speed_required_title">Is speed required</string>
+    <string name="android_location_is_speed_required_default_value">true</string>
+
+    <string name="android_location_speed_accuracy_key">gpsghoster.android_location_speed_accuracy</string>
+    <string name="android_location_speed_accuracy_title">Speed accuracy</string>
+    <string name="android_location_speed_accuracy_default_value">ACCURACY_HIGH</string>
+
+    <!-- Google location -->
+    <string name="google_location_header_title">Google location</string>
+
+    <string name="google_location_key">gpsghoster.google_location_key</string>
+    <string name="google_location_title">Google location</string>
+    <string name="google_location_summary_on">is enabled</string>
+    <string name="google_location_summary_off">is disabled</string>
+    <string name="google_location_default_value">true</string>
+
+    <string name="google_location_interval_key">gpsghoster.gms_location_interval</string>
+    <string name="google_location_interval_title">Interval (ms)</string>
+    <string name="google_location_interval_default_value">1000</string>
+
+    <string name="google_location_fastest_interval_key">gpsghoster.gms_location_fastest_interval</string>
+    <string name="google_location_fastest_interval_title">Fastest interval (ms)</string>
+    <string name="google_location_fastest_interval_default_value">500</string>
+
+    <string name="google_location_priority_key">gpsghoster.gms_location_priority</string>
+    <string name="google_location_priority_title">Priority</string>
+    <string name="google_location_priority_default_value">PRIORITY_HIGH_ACCURACY</string>
+
+    <!-- Mock Location Preferences -->
+    <string name="mock_location_header_title">Mock location</string>
+
+    <string name="mock_location_key">gpsghoster.mock_location_key</string>
+    <string name="mock_location_title">Mock</string>
+    <string name="mock_location_summary_on">is enabled</string>
+    <string name="mock_location_summary_off">is disabled</string>
+    <string name="mock_location_default_value">false</string>
+
+    <string name="alert_message_mock_location">Please check :\n-Permission ACCESS_MOCK_LOCATION is granted\n- Development settings is enabled\n- Mock location is allowed.</string>
+    <string name="alert_negative_button_mock_location">OK</string>
+    <string name="alert_positive_button_mock_location">Check</string>
+
+    <string name="mock_epsilon_key">gpsghoster.mock_epsilon</string>
+    <string name="mock_epsilon_title">Epsilon</string>
+    <string name="mock_epsilon_default_value">0.05</string>
+
+    <string name="mock_distance_key">gpsghoster.mock_distance</string>
+    <string name="mock_distance_title">Distance</string>
+    <string name="mock_distance_default_value">50</string>
+
+</resources>

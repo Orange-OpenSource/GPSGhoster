@@ -1,0 +1,20 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="135"
+        android:centerColor="#009688"
+        android:endColor="#00695C"
+        android:startColor="#4DB6AC"
+        android:type="linear" />
+</shape>

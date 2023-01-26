@@ -1,0 +1,4 @@
+zone "gpsghoster.votre_domaine.com" {
+    type master;
+    file "/etc/bind/zones/db.gpsghoster.votre_domaine.com";
+};

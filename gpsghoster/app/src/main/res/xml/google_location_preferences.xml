@@ -1,0 +1,45 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="@string/google_location_key"
+        app:title="@string/google_location_title"
+        app:summaryOn="@string/google_location_summary_on"
+        app:summaryOff="@string/google_location_summary_off"
+        app:defaultValue="@string/google_location_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:dependency="@string/google_location_key"
+        app:key="@string/google_location_interval_key"
+        app:title="@string/google_location_interval_title"
+        app:defaultValue="@string/google_location_interval_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:dependency="@string/google_location_key"
+        app:key="@string/google_location_fastest_interval_key"
+        app:title="@string/google_location_fastest_interval_title"
+        app:defaultValue="@string/google_location_fastest_interval_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <ListPreference
+        app:dependency="@string/google_location_key"
+        app:key="@string/google_location_priority_key"
+        app:title="@string/google_location_priority_title"
+        app:entries="@array/google_location_priority_entries"
+        app:entryValues="@array/google_location_priority_values"
+        app:defaultValue="@string/google_location_priority_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

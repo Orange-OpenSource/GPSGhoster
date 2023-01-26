@@ -1,0 +1,28 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<!--    <base-config>-->
+<!--        <trust-anchors>-->
+<!--            &lt;!&ndash; Trust preinstalled CAs &ndash;&gt;-->
+<!--            <certificates src="system" />-->
+<!--            &lt;!&ndash; Additionally trust user added CAs &ndash;&gt;-->
+<!--            <certificates src="user" />-->
+<!--        </trust-anchors>-->
+<!--    </base-config>-->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">api.gpsghoster.votre_domaine.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/certificate"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

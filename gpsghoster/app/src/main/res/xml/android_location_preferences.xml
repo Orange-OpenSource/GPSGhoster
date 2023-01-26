@@ -1,0 +1,122 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="@string/android_location_key"
+        app:title="@string/android_location_title"
+        app:summaryOn="@string/android_location_summary_on"
+        app:summaryOff="@string/android_location_summary_off"
+        app:defaultValue="@string/android_location_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:dependency="@string/android_location_key"
+        app:key="@string/android_location_min_time_ms_key"
+        app:title="@string/android_location_min_time_ms_title"
+        app:defaultValue="@string/android_location_min_time_ms_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:dependency="@string/android_location_key"
+        app:key="@string/android_location_min_distance_m_key"
+        app:title="@string/android_location_min_distance_m_title"
+        app:defaultValue="@string/android_location_min_distance_m_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <SwitchPreferenceCompat
+        app:dependency="@string/android_location_key"
+        app:key="@string/criteria_key"
+        app:title="@string/criteria_title"
+        app:summaryOn="@string/criteria_summary_on"
+        app:summaryOff="@string/criteria_summary_off"
+        app:defaultValue="@string/criteria_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <PreferenceCategory
+        app:key="@string/criteria_key"
+        app:title="@string/criteria_title"
+        app:initialExpandedChildrenCount="0">
+
+        <ListPreference
+            app:key="@string/android_location_accuracy_key"
+            app:title="@string/android_location_accuracy_title"
+            app:entries="@array/android_location_criteria_two_entries"
+            app:entryValues="@array/android_location_criteria_two_values"
+            app:defaultValue="@string/android_location_accuracy_default_value"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="@string/android_location_horizontal_accuracy_key"
+            app:title="@string/android_location_horizontal_accuracy_title"
+            app:entries="@array/android_location_criteria_three_entries"
+            app:entryValues="@array/android_location_criteria_three_values"
+            app:defaultValue="@string/android_location_horizontal_accuracy_default_value"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/android_location_is_altitude_required_key"
+            app:title="@string/android_location_is_altitude_required_title"
+            app:defaultValue="@string/android_location_is_altitude_required_default_value"/>
+
+        <ListPreference
+            app:dependency="@string/android_location_is_altitude_required_key"
+            app:key="@string/android_location_vertical_accuracy_key"
+            app:title="@string/android_location_vertical_accuracy_title"
+            app:entries="@array/android_location_criteria_three_entries"
+            app:entryValues="@array/android_location_criteria_three_values"
+            app:defaultValue="@string/android_location_vertical_accuracy_default_value"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/android_location_is_bearing_required_key"
+            app:title="@string/android_location_is_bearing_required_title"
+            app:defaultValue="@string/android_location_is_bearing_required_default_value"/>
+
+        <ListPreference
+            app:dependency="@string/android_location_is_bearing_required_key"
+            app:key="@string/android_location_bearing_accuracy_key"
+            app:title="@string/android_location_bearing_accuracy_title"
+            app:entries="@array/android_location_criteria_three_entries"
+            app:entryValues="@array/android_location_criteria_three_values"
+            app:defaultValue="@string/android_location_bearing_accuracy_default_value"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/android_location_is_cost_allowed_key"
+            app:title="@string/android_location_is_cost_allowed_title"
+            app:defaultValue="@string/android_location_is_cost_allowed_default_value" />
+
+        <ListPreference
+            app:dependency="@string/android_location_is_cost_allowed_key"
+            app:key="@string/android_location_power_requirement_key"
+            app:title="@string/android_location_power_requirement_title"
+            app:entries="@array/android_location_criteria_one_entries"
+            app:entryValues="@array/android_location_criteria_one_values"
+            app:defaultValue="@string/android_location_power_requirement_default_value"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/android_location_is_speed_required_key"
+            app:title="@string/android_location_is_speed_required_title"
+            app:defaultValue="@string/android_location_is_speed_required_default_value" />
+
+        <ListPreference
+            app:dependency="@string/android_location_is_speed_required_key"
+            app:key="@string/android_location_speed_accuracy_key"
+            app:title="@string/android_location_speed_accuracy_title"
+            app:entries="@array/android_location_criteria_three_entries"
+            app:entryValues="@array/android_location_criteria_three_values"
+            app:defaultValue="@string/android_location_speed_accuracy_default_value"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

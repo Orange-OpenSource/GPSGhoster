@@ -1,0 +1,36 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="@string/mock_location_key"
+        app:title="@string/mock_location_title"
+        app:summaryOn="@string/mock_location_summary_on"
+        app:summaryOff="@string/mock_location_summary_off"
+        app:defaultValue="@string/mock_location_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:dependency="@string/mock_location_key"
+        app:key="@string/mock_epsilon_key"
+        app:title="@string/mock_epsilon_title"
+        app:defaultValue="@string/mock_epsilon_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:dependency="@string/mock_location_key"
+        app:key="@string/mock_distance_key"
+        app:title="@string/mock_distance_title"
+        app:defaultValue="@string/mock_distance_default_value"
+        app:useSimpleSummaryProvider="true" />
+
+</PreferenceScreen>

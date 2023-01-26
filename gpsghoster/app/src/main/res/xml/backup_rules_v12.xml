@@ -1,0 +1,32 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+<!--
+    <include domain=["file" | "database" | "sharedpref" | "external" | "root"] path="string"
+             requireFlags=["clientSideEncryption" | "deviceToDeviceTransfer"] />
+    <exclude domain=["file" | "database" | "sharedpref" | "external" | "root"] path="string" />
+-->
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <exclude domain="file"/>
+        <exclude domain="database"/>
+        <exclude domain="sharedpref"/>
+        <exclude domain="external"/>
+        <exclude domain="root"/>
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file"/>
+        <exclude domain="database"/>
+        <exclude domain="sharedpref"/>
+        <exclude domain="external"/>
+    </device-transfer>
+</data-extraction-rules>

@@ -1,0 +1,54 @@
+/*
+ * Software Name: GPSGhoster
+ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+ * SPDX-License-Identifier: BSD 3-Clause "New"
+ *
+ * This software is distributed under the BSD-3-Clause license.
+ *
+ * Author: Franck SEROT <frank.serot@orange.com> et al.
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'org.owasp:dependency-check-gradle:7.1.2'
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "3.4.0.2513"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 31
+
+    minSdkVersion = 23
+    targetSdkVersion = 29
+
+    roomVersion = '2.4.2'
+
+    parseVersion = "4.1.0"
+
+    appcompat = "androidx.appcompat:appcompat:1.1.0"
+    parse = "com.github.parse-community.Parse-SDK-Android:parse:$parseVersion"
+
+    parseFacebookUtils = "com.github.parse-community:ParseFacebookUtils-Android:1.14.0"
+    parseTwitterUtils = "com.github.parse-community:ParseTwitterUtils-Android:1.13.0"
+}
+
+allprojects {
+    apply plugin: 'org.owasp.dependencycheck'
+}

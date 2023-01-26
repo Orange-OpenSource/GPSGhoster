@@ -1,0 +1,33 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="@string/location_service_key"
+        app:title="@string/location_service_title"
+        app:summaryOn="@string/location_service_summary_on"
+        app:summaryOff="@string/location_service_summary_off"
+        app:defaultValue="@string/location_service_default_value" />
+
+    <Preference
+        app:fragment="com.orange.gpsghoster.ui.settings.AndroidLocationFragment"
+        app:title="@string/android_location_header_title" />
+
+    <Preference
+        app:fragment="com.orange.gpsghoster.ui.settings.GoogleLocationFragment"
+        app:title="@string/google_location_header_title" />
+
+    <Preference
+        app:fragment="com.orange.gpsghoster.ui.settings.MockLocationFragment"
+        app:title="@string/mock_location_header_title" />
+
+</PreferenceScreen>

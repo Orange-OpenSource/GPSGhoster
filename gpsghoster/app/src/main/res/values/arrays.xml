@@ -1,0 +1,71 @@
+<!--
+  ~ /*
+  ~ * Software Name: GPSGhoster
+  ~ * SPDX-FileCopyrightText: Copyright (c) 2023 Orange
+  ~ * SPDX-License-Identifier: BSD 3-Clause "New"
+  ~ *
+  ~ * This software is distributed under the BSD-3-Clause license.
+  ~ *
+  ~ * Author: Franck SEROT <frank.serot@orange.com> et al.
+  ~ */
+  -->
+<resources>
+    <!-- Android location -->
+
+    <string-array name="android_location_criteria_one_entries">
+        <item>No</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="android_location_criteria_one_values">
+        <item>NO_REQUIREMENT</item>
+        <item>POWER_LOW</item>
+        <item>POWER_MEDIUM</item>
+        <item>POWER_HIGH</item>
+    </string-array>
+
+    <string-array name="android_location_criteria_two_entries">
+        <item>No</item>
+        <item>Fine</item>
+        <item>Coarse</item>
+    </string-array>
+
+    <string-array name="android_location_criteria_two_values">
+        <item>NO_REQUIREMENT</item>
+        <item>ACCURACY_FINE</item>
+        <item>ACCURACY_COARSE</item>
+    </string-array>
+
+    <string-array name="android_location_criteria_three_entries">
+        <item>No</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="android_location_criteria_three_values">
+        <item>NO_REQUIREMENT</item>
+        <item>ACCURACY_LOW</item>
+        <item>ACCURACY_MEDIUM</item>
+        <item>ACCURACY_HIGH</item>
+    </string-array>
+
+    <!-- Google location -->
+
+    <string-array name="google_location_priority_entries">
+        <item>Balanced power accuracy</item>
+        <item>High accuracy</item>
+        <item>Low power</item>
+        <item>No power</item>
+    </string-array>
+
+    <string-array name="google_location_priority_values">
+        <item>PRIORITY_BALANCED_POWER_ACCURACY</item>
+        <item>PRIORITY_HIGH_ACCURACY</item>
+        <item>PRIORITY_LOW_POWER</item>
+        <item>PRIORITY_NO_POWER</item>
+    </string-array>
+
+</resources>
