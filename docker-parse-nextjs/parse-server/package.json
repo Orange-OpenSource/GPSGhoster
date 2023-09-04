@@ -20,7 +20,7 @@
   "dependencies": {
     "express": "4.18.1",
     "parse": "3.4.2",
-    "parse-server": "5.2.1",
+    "parse-server": "5.5.5",
     "parse-smtp-template" : "2.2.0"
   },
   "devDependencies": {
